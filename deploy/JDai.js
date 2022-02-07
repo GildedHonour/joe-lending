@@ -1,8 +1,13 @@
 const DAI = new Map();
-DAI.set("43114", "0xd586e7f844cea2f87f50152665bcbc2c279d8d70");
+
+//https://snowtrace.io/address/0xd586e7f844cea2f87f50152665bcbc2c279d8d70#code
+DAI.set("43114", "0xd586e7f844cea2f87f50152665bcbc2c279d8d70"); // Token: Dai Stablecoin; contract: BridgeToken
+DAI.set("43113", "0x8b01e7ff72e4dcdaba6074e77a4d21db2f372893"); //fixme
+
 
 const DAI_PRICE_FEED = new Map();
-DAI_PRICE_FEED.set("43114", "0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300");
+DAI_PRICE_FEED.set("43114", "0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300"); //EACAggregatorProxy contract
+DAI_PRICE_FEED.set("43113", "0x5498BB86BC934c8D34FDA08E81D444153d0D06aD"); //
 
 module.exports = async function ({
   getChainId,

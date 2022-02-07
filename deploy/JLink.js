@@ -1,8 +1,8 @@
 const LINK = new Map();
-LINK.set("43114", "0x5947bb275c521040051d82396192181b413227a3");
+LINK.set("43114", "0x5947bb275c521040051d82396192181b413227a3"); //Chainlink Token (LINK.e); contract: BridgeToken
 
 const LINK_PRICE_FEED = new Map();
-LINK_PRICE_FEED.set("43114", "0x49ccd9ca821EfEab2b98c60dC60F518E765EDe9a");
+LINK_PRICE_FEED.set("43114", "0x49ccd9ca821EfEab2b98c60dC60F518E765EDe9a"); //EACAggregatorProxy
 
 module.exports = async function ({
   getChainId,
