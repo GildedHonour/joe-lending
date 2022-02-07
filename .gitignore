@@ -47,3 +47,4 @@ junit.xml
 cache
 artifacts
 out.html
+deployments/fuji/

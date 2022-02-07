@@ -25,7 +25,9 @@
     "test:prepare": "NO_RUN=true ./script/test",
     "checksize": "npx run ./script/saddle/contractSizer.js",
     "rinkeby:deploy": "hardhat --network rinkeby deploy",
-    "avalanche:deploy": "hardhat --network avalanche deploy"
+    "avalanche:deploy": "hardhat --network avalanche deploy",
+    "fuji:deploy": "hardhat --network fuji deploy",
+    "fuji:export": "hardhat --network fuji export --export exports/fuji.json"
   },
   "repository": "git@github.com:traderjoe-xyz/joe-lending.git",
   "author": "Trader Joe",
@@ -58,7 +60,9 @@
     "solium": "^1.2.5",
     "solparse": "^2.2.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "simple-git": "^3.1.1"
+  },
   "resolutions": {
     "scrypt.js": "https://registry.npmjs.org/@compound-finance/ethereumjs-wallet/-/ethereumjs-wallet-0.6.3.tgz",
     "**/ganache-core": "github:compound-finance/ganache-core.git#jflatow/unbreak-fork"
