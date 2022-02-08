@@ -1,7 +1,12 @@
+const { AvalancheFujiInfo } = require("../avalancheFujiDeployInfo.js");
+
 const WAVAX = new Map();
 WAVAX.set("4", "0xc778417e063141139fce010982780140aa0cd5ab"); // Wrapped Ether (WETH) - WETH
 WAVAX.set("43114", "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"); // Wrapped AVAX (WAVAX); contract: WAVAX
-WAVAX.set("43113", "0xd00ae08403B9bbb9124bB305C09058E32C39A48c"); // Wrapped AVAX (WAVAX)
+
+
+// WAVAX.set("43113", "0xd00ae08403B9bbb9124bB305C09058E32C39A48c"); // Wrapped AVAX (WAVAX)
+WAVAX.set(AvalancheFujiInfo.chainId, AvalancheFujiInfo.contracts.WAVAX); // Wrapped AVAX (WAVAX)
 
 
 const AVAX_PRICE_FEED = new Map();
